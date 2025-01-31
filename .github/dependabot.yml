@@ -1,0 +1,29 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      time: "12:00"
+      day: "sunday"
+    ignore:
+      - dependency-name: "next"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react-dom"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@types/react"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@types/react-dom"
+        update-types: ["version-update:semver-major"]
+    groups:
+      patch-updates:
+        patterns: ["*"]
+        update-types: ["patch"]
+      minor-updates:
+        patterns: ["*"]
+        update-types: ["minor"]
+      major-updates:
+        patterns: ["*"]
+        update-types: ["major"]

@@ -14,9 +14,5 @@ This is a boilerplate project for Next.js 15, designed to provide a quick start 
 
 ## Getting Started
 
-`bunx create next-app -e https://github.com/eviloma/next-15`
-
-## Next.js 14
-
-Need Next.js 14? Go to [Next.js 14 template](https://github.com/eviloma/next-14) for more information.
+`bunx create next-app -e https://github.com/Eviloma/next-15-template`
 
